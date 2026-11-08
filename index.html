@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>钢铁防线 · 坦克大战</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<header><div><p class="eyebrow">STEEL FRONT / ARCADE 01</p><h1>钢铁防线<span>坦克大战</span></h1></div><button id="restart">重新开始 ↻</button></header>
+<section class="dashboard" aria-label="游戏状态"><div>装甲 <strong id="health">3 / 3</strong></div><div>战绩 <strong id="score">0000</strong></div><div>波次 <strong id="wave">01</strong></div><div class="status">● 系统在线</div></section>
+<div class="arena"><canvas id="game" width="960" height="640" aria-label="坦克游戏战场"></canvas><div id="overlay"><p class="eyebrow">守住阵地，突破重围</p><h2 id="message">准备出击</h2><p id="detail">驾驶你的坦克，消灭所有敌人。</p><button id="start">开始作战 →</button></div></div>
+<footer><p><kbd>W A S D</kbd> / <kbd>方向键</kbd> 移动　<kbd>空格</kbd> 射击　<kbd>P</kbd> 暂停</p><p>绿色为友军 · 红色为敌军 · 金色方块修复装甲</p></footer>
+<div class="touch" aria-label="触屏操作"><div class="dpad"><button data-key="ArrowUp" aria-label="向上">↑</button><button data-key="ArrowLeft" aria-label="向左">←</button><button data-key="ArrowDown" aria-label="向下">↓</button><button data-key="ArrowRight" aria-label="向右">→</button></div><button data-key=" " class="fire">开火</button><button id="pause">暂停</button></div>
+</main><script src="game.js"></script>
+</body></html>
